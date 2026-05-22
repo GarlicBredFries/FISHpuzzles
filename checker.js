@@ -3,7 +3,7 @@ function ansCheck(userAns,ans,closes) {
     if (userAns === ans) {
         verdict.innerHTML = "Correct!";
     }
-    if (closes.includes(userAns)) {
+    else if (closes.includes(userAns)) {
         verdict.innerHTML = "You're on the right track, but you're not there yet.";
     }
     else {
