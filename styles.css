@@ -4,13 +4,13 @@ body {
 }
 
 img {
-    vertical-align: text-bottom;
+    vertical-align: text-top;
 }
 
 div.header {
-    position: sticky;
+    /* position: sticky; */
     width: 100%;
-    height: 32px;
+    height: auto;
     top: 0px;
     left: 0px;
     padding: 12px;
@@ -23,8 +23,20 @@ div.mainbody {
     top: auto;
 }
 
-@media only screen and (max-width: 600px) {
-    div.header{
-        height: auto;
-    }
+p.prehint {
+    display: inline;
+}
+p.hint {
+    background-color: white;
+    display: inline;
+}
+p.hint:hover {
+    background-color: black;
+}
+
+input {
+  font-size: 18px;
+  padding: 6px;
+  border: 1px solid;
+  border-radius: 6px;
 }
