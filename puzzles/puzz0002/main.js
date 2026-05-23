@@ -1,5 +1,5 @@
-let answer = "malamar"
-let closes = ["inkay"]
+let answer = "azerty"
+let closes = ["frenchlayout"]
 
 document.addEventListener('DOMContentLoaded', function () {
     var userInput = document.getElementById("inputBox");
