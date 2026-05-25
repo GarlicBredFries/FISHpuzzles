@@ -5,11 +5,12 @@ body {
 
 img {
     vertical-align: text-top;
+    max-width: 90%;
 }
 
 div.header {
     /* position: sticky; */
-    width: 100%;
+    margin: 0px;
     height: auto;
     top: 0px;
     left: 0px;
@@ -44,3 +45,4 @@ input {
 a {
     color: white;
 }
+

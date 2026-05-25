@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <title>FISH puzzles</title>
+    <script src = "main.js"></script>
+    <script src = "..\main.js"></script>
+    <script src = "..\..\main.js"></script>
+    <script src = "..\..\checker.js"></script>
+    <link rel = "icon" type = "image/png" href = "..\..\favicon.png">
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "..\styles.css">
+    <link rel = "stylesheet" href = "..\..\styles.css">
+</head>
+<body>
+    <div id = "header" class = "header">
+        <a href = "https://garlicbredfries.github.io/FISHpuzzles/"><img src = "..\..\favicon.png"></a>
+        Friendly Instructive Simple Hunt Puzzles
+    </div>
+    <div id = "title">
+        <h1>Taking Atoll</h1>
+    </div>
+    <div id = "inputArea">
+        <input type = "text" id = "inputBox" placeholder = "Input your answer here">
+        <input type = "button" id = "inputButton" value = Submit>
+    </div>
+    <div id = "verdictArea">
+        <h1 id = "verdict"></h1>
+    </div>
+    <div id = "puzzleArea">
+        <p>
+            <a href="https://puzz.link/rules.html?shimaguni" target="_blank">Learn about shimaguni/islands puzzles here! (Puzz.link)</a><br>
+            <br>
+            Play the puzzles (with answer check!):<br>
+            <a href="https://swaroopg92.github.io/penpa-edit/#m=solve&p=1VZbb9s4E333ryAE9KlEKom6A31wbsUWbb6mSTfbGEHASLKlRBZbSU7yKWh/ew8viq3E7V6AfVjYpo6GwzNnSA7p9uuKNzl1fBpSL6I2dfAJg4iyyKOOrX+2+ZyWXZUn5JTflPWCTDtRVXS66grRJOTN7iGlJ0W55ItVXb76ra14nbXk46rK2+SFu4/vScGznLRimZM0r6qWiJp0RU6uBG8y0gkyF82SlHrkjh7j7JBpVZEmX5Sibkkq6o6XNcnvedpV/wdDbga8cPfIXVGmBd4Jr4looGshal7BDcPqPO3yjCwasfpCxJy0UkymhZhYLmKRerW8yhtS1lmZ8i5vlcK27M9zOUq+6HjwUG9amWFgO0QlaXhJyutadOQqJzy75mled4SnjWhbMwypN1neDAK8HXJ6Jx6T1elAaIPxxpUsV21HCn476MAszklWzud5I+mV0naH/u/wkM551eb07efr3f2b6d3B9I9X/jljn47mL6/3jz9dZ2e/O8d2+aqxj6qofv9hf7d6+aY/f19Mb/ODPPjQirSocp7x/vzs7X1VH0aLYu7svS32ojmv7fZrdBrf7h6/fj2ZmQ1yMZlZjkUtFz/Huvjen3yfWRZ1LiYP/cfkob9MZhffaP9pDaM1PEke0B4lD5YXWclMkjiKhlqBMrC1wfECafEHCwY6avhn1Z6CkfZMtfuqtVXrq/ad8jlAIJc51PVtK3Gh2bepG8QaY/+vcQgMAQrH1I0MjlAjdqgws4MN7ANDnsIh8OAfr3GIWJHh96EhNBqYCz2OGQt+13C64H/E4HcNv+sB+2vOUI/Fk7qx4YxtxNWx8IS/1gC+R6w0+K7BUgMzmAF7Rpu/xpI/NP4h/MPB33vEKpajNeAJbPJyHGA9lnmMMk9z4gmsc8ET2OToIXfP5O5Bs9wdCmN+PJOXh1hmHZV/YObEg85gWF+sqT/MOdbx0Y719Yd5AA51XDwxh4Ynhh7H6HSg+RFDszP4IO6AQ/DEA4/kHNYdGsJhX8n1Mvpx/DLH+MfIcQO78TAWmg1GP2XMzBXWhbHBX875sN/AH5tYHtYoMHsjwJxEw7pgDpmZWyY5BwxOs9Z4UjasKYM2ZjQwOdbwy7i24bTlftuIFZh9EkgNkgfFd6ZKcE+1nmoDVZqhPAomk5mn76Hh447e/P9GHw5DnHtWK6rLdtXMcfpfqlvLSvS5vNljJV2zMiZ9AY28KiG+VGW9jWDoGhnLRS2afGuXNObZ4mdUsmsLlb57Rh13uFjHqah/EiNTWjZpNTZ1TTl6500j7kaWJe+KkeGKd/jb0RbllzETrruxgI6PJfIb/iTacj0d3ybWvaV+MxxylMk7Kk76Ke3f4GbZuMVof4xL6n3SH8k7St9n1Fquqq5MRSUQ0thwsaiBLuDBGp6pfon2tNGxgY8MptZHGeIzXvVsXb7TZB+SWX9KLdm5qxgktJbiFgloffI9FcsrpDizNiYJuSDbVSZuVsbVkRfkVGdx8hezAMmQhYQ6C4m2ZCGT+3cziC++6QWz/9ZfiX/2v+BPD6h7U9ei+UVprzufmrdUOKy/KPKN3m32n9TzRu9T+7PilWKf1y+sW0oY1qdVDNPzQobxWS3D9pNylqxPK1qqelrUMtSzupahNkt7djH5AQ==&a=VY7BDcUgDEN34dxDoYkhs6Duvwbf758qoSfiOE72bv3u7fpxwAcmnLDMLojSUQaegTKW+dyQbvAPkoPMCMhU4E+URElyxA3CL3SxV/+upwgml9g05JIpORKffMa0eboxrS2Xy5bl2HJZXlnV3mt/3nsA" target="_blank">
+                Both on Penpa+
+            </a><br>
+            <a href="https://puzz.link/p?shimaguni/7/7/cmbhoc0203ms0evovoq" target="_blank">Puzzle 1 on puzz.link</a> ; <a href="https://puzz.link/p?shimaguni/7/7/39mrka420epg5u0f002h3j5" target="_blank">Puzzle 2 on puzz.link</a><br>
+            <br>
+            <p><a href="https://swaroopg92.github.io/penpa-edit/#m=solve&p=tZVvb6M4EMbf51MgXt1pLS0EkgDSvsi/5q5qs8023V6LosolTqEhuGtIW1F1P/uOJ+llIOnqVroVwTI/O/PMGD8m/7bmSrAOXK7HLGbD5Xgu3m1L/96uaVKkIjCmfJlkd0a3kGlq/HEiikIoY6SS+Z+suy5iqQJj1DtibCwLPTsWShhJbmTS4Fn+BHOjWERLYyGVUcQw8MBVwT4fHbEFT3PBjq/ue4Nl92nY/edj69pxLsaLD/eDycX9/PKrPbGSj8oap152ejbopR9G5fVp3H0UQ9E+y2UUp4LPeXl9efycZkfeXbyw+8dx31vwzMq/eVP/sTf59KkRbiuaNULTNpnZhNs2Z9/L8++haTJ71ngpvwQv5U0Qzl5ZebHrervuefAC7Th4MZuuGYTmZ/gjhoF4LQ2+EtDWYEhAR4MvBHganBDga9DdAcfS4IwAVOkRgCokDwdVaAxUmRKAKiQxF1VIYq6twTkBqEJnoAqRdVGFJOaiCpnRQhWSRwtV/iagqUGfAFQhmbZQhc5Alb92oI0qRLZdV2mjypgAR4MRAahCym+jCnkNnfqKdVCFZNpBFfIaOqgyIAB3EFHpoArJw6ureKhCgnqoQjadhyokDw9VyB7zcAdd7YCPKiSojyokDx9VSB4+qpBF9lHlggBUIYvs4w76t3xwkY1eusJ2CvZipYPtAFsL2xa2JzhniO0ltn1sXWzbOKejDdpohE0XD7O3q/X/P8EBAmeFmcv0Jl+rBY/EjXjmUWEGm7OMjlRYtl7dClVBqZQPaZIdivA2VIHJXSaVODikoZjfvRdKDx0IdSvVvJbTE0/Tai34saigKFFRWkWFSirPXCn5VCErXsQVcMsL+LjkcfJQjSSy2mIWvJoiX/Ka2mq3HK8N89nEO3RYkzn6YPeDcsLKEexAcvSzcgIn+2lQjvXBvvkIMHO1ToskkqkEyS2DDYh/bEJ3uOte4rju9TfQtqA/3vYZGAYer+Bxs1o32oRAzoKwnDJTD/Ywgu6aK/kIBWzy08+RXN1CiaFJFglqgWrXc7lcb6fa2kjdTRXn/7EKCPJWhe5uqtC9A1Xo4n5vBf7sdfPCrF/6/v6m8+N5a2ypfuLt3WAdH3A40J+YnIwe4u/4mYzW+Z55dbL7/gV6wMJA6y4GtG9kgHteBvaOnXXUuqN1VnVTa6k9X2spam04erH3Aw==" target="_blank">
+                Interactive letter grid (Penpa+)</a><br>
+            Note: There is no answer check for this part</p>
+            <br>
+            <br>
+            <img src="img0005-1.png">
+            <img src="img0005-2.png">
+        </p>
+    </div><br>
+    <hr>
+    <div id = "hintArea">
+        <h2>Hints (Click to open, hover to see):</h2>
+        <p>
+            Note: The hover may not work when using some extensions.
+            Please be aware that you may see the entire section when clicking it
+        </p>
+        <details>
+            <summary>Difficulty</summary>
+            <p class = "hint">5/10</p><br>
+            <p class = "hint">The difficulty may vary depending on your experience with shimaguni</p><br>
+        </details>
+        <br>
+        <details>
+            <summary>Starting Idea</summary>
+            <p class = "hint">The shimaguni puzzles are just puzzles</p><br>
+        </details>
+        <br>
+        <details>
+            <summary>Starting Action</summary>
+            <p class = "hint">Solve the puzzles first</p><br>
+        </details>
+        <br>
+        <details>
+            <summary>Process Hints</summary>
+            <p class = "hint">The grids are all the same size</p><br>
+            <p class = "hint">Look at the letter grid; in general, setters like to fill the letter grid with words, but in this case it is also hinting the solution</p><br>
+            <p class = "hint">The first line of the letter grid is "OVERLAP"</p><br>
+            <p class = "hint">Look at the overlap between the two solutions</p><br>
+            <p class = "hint">Place that overlap in the letter grid</p><br>
+        </details>
+        <br>
+        <details>
+            <summary>Solution</summary>
+            <details>
+                <summary>Shimaguni Puzzle Solutions</summary>
+                <img src="img0005-3.png">
+            </details>
+            <p class = "hint">The shimaguni puzzle solutions are shown above</p><br>
+            <p class = "hint">Using the fact that the first row of the letter grid says "OVERLAP", overlap the solutions of the two puzzles</p><br>
+            <details>
+                <summary>Next part of solution</summary>
+                <img src="img0005-4.png">
+                <p>The first puzzle has been marked in red, the second in blue; any cell which is shaded in both is colored purple, a mix of red and blue, in the middle grid</p>
+            </details>
+            <p class = "hint">Taking the purple cells, it spells out ARCHIPELAGO</p><br>
+        </details>
+        <br>
+        <details>
+            <summary>Answer</summary>
+            <p class = "hint">ARCHIPELAGO</p><br>
+        </details>
+    </div>
+    <div id = "footerArea">
+        <p>
+            I hope you enjoyed the puzzle! I am still working on 
+            difficulty scaling and hinting for these puzzles, so
+            hopefully it will get better over time.
+        </p>
+    </div>
+</body>
