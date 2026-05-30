@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <title>FISH puzzles</title>
+    <script src = "main.js"></script>
+    <script src = "..\main.js"></script>
+    <script src = "..\..\main.js"></script>
+    <script src = "..\..\checker.js"></script>
+    <link rel = "icon" type = "image/png" href = "..\..\favicon.png">
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "..\styles.css">
+    <link rel = "stylesheet" href = "..\..\styles.css">
+</head>
+<body>
+    <div id = "header" class = "header">
+        <a href = "https://garlicbredfries.github.io/FISHpuzzles/"><img src = "..\..\favicon.png"></a>
+        Friendly Instructive Simple Hunt Puzzles
+    </div>
+    <div id = "title">
+        <h1>Toner Honer</h1>
+    </div>
+    <div id = "inputArea">
+        <input type = "text" id = "inputBox" placeholder = "Input your answer here">
+        <input type = "button" id = "inputButton" value = Submit>
+    </div>
+    <div id = "verdictArea">
+        <h1 id = "verdict"></h1>
+    </div>
+    <div id = "puzzleArea">
+        <p>
+            Message from Boss: I need these flags printed. Please make sure they print out 
+            properly by using those circles like the ones they use on chip bags.<br>
+            I have provided an example below. <br><br>
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg">
+            <img style = "max-height: 100px; padding: 1%;" src = "img0006-1.png"><br><br>
+            This print would get an "A".<br>
+            Please help me with the rest.<br><br>
+            Thanks!<br>
+            -Boss
+        </p><br><br>
+        <p>
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg">
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg">
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg">
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg">
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg">
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tuvalu.svg">
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg">
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg">
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg">
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg">
+            <img class = "flag" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg">
+        </p>
+    <hr>
+        <details>
+            <summary>Image attributions (This is not part of the puzzle, spoilers inside):</summary>
+            <p>
+                Image attributions as formatted by Wikipedia<br><br>
+                Canada Flag:<br>
+                By Original: <a href="https://en.wikipedia.org/wiki/George_Stanley" class="extiw" title="w:George Stanley">George F. G. Stanley</a>Modified by: The original uploader was <a href="//commons.wikimedia.org/wiki/User:Illegitimate_Barrister" title="User:Illegitimate Barrister">Illegitimate Barrister</a> at <a href="//commons.wikimedia.org/wiki/Main_Page" title="Main Page"> Wikimedia Commons</a>. The current SVG encoding is a rewrite performed by <a href="//commons.wikimedia.org/wiki/User:MapGrid" title="User:MapGrid">MapGrid</a>. - This vector image is generated programmatically from geometry defined in <a href="//commons.wikimedia.org/wiki/File:Flag_of_Canada_(construction_sheet_-_leaf_geometry).svg" title="File:Flag of Canada (construction sheet - leaf geometry).svg">File:Flag of Canada (construction sheet - leaf geometry).svg</a>., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=32276527">Link</a>
+                <br><br>
+                Slovenia Flag:<br>
+                By Original: Marko Pogačnik Vector: <a href="//commons.wikimedia.org/wiki/User:Achim1999" title="User:Achim1999">Achim1999</a> - <span class="int-own-work" lang="en">Own work</span> construction sheet from <a rel="nofollow" class="external free" href="http://www.vlada.si/o_sloveniji/politicni_sistem/drzavni_simboli/">http://www.vlada.si/o_sloveniji/politicni_sistem/drzavni_simboli/</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=343744">Link</a>
+                <br><br>
+                Uzbekistan Flag:<br>
+                By Farhod Yoʻldoshev - <a rel="nofollow" class="external text" href="https://lex.uz/en/docs/-100122">Oʻzbekiston Respublikasining Davlat bayrogʻi to‘g‘risida</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=344734">Link</a>
+                <br><br>
+                Luxembourg Flag:<br>
+                By Drawn by <a href="//commons.wikimedia.org/wiki/User:SKopp" title="User:SKopp">User:SKopp</a> - <span class="int-own-work" lang="en">Own work</span> <a rel="nofollow" class="external free" href="http://www.legilux.public.lu/leg/a/archives/1972/0051/a051.pdf#page=2">http://www.legilux.public.lu/leg/a/archives/1972/0051/a051.pdf#page=2</a>, colors from <a rel="nofollow" class="external free" href="http://www.legilux.public.lu/leg/a/archives/1993/0731609/0731609.pdf">http://www.legilux.public.lu/leg/a/archives/1993/0731609/0731609.pdf</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=343636">Link</a>
+                <br><br>
+                Chile Flag:<br>
+                By See file history below for details. - <span class="int-own-work" lang="en">Own work</span>. This vector image was generated programmatically from geometry defined in <a href="//commons.wikimedia.org/wiki/File:Flag_of_Chile_(construction_sheet).svg" title="File:Flag of Chile (construction sheet).svg">File:Flag of Chile (construction sheet).svg</a>., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=20388924">Link</a>
+                <br><br>
+                Maldives Flag:<br>
+                By See File history, below, for details. - <a rel="nofollow" class="external text" href="http://www.maldivesinfo.gov.mv/home/upload/downloads/Compilation.pdf#page=128">Constitution of the Republic of Maldives — Schedule 3</a> and <a rel="nofollow" class="external text" href="https://www.fotw.info/flags/mv.html">Maldives</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=433211">Link</a>
+                <br><br>
+                Tuvalu Flag:<br>
+                By Unknown - <a rel="nofollow" class="external text" href="http://www.tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1995/1995-0004/TuvaluNationalFlagAct_1.pdf">Tuvalu National Flag Act</a>CONSTRUCTION SHEET: <span typeof="mw:File"><a href="//commons.wikimedia.org/wiki/File:Flag_of_Tuvalu_(construction_sheet).svg" class="mw-file-description"></a></span>STAR TABLE: <a href="//commons.wikimedia.org/wiki/File:Flag_of_Tuvalu_(construction_sheet).svg#Star_table" title="File:Flag of Tuvalu (construction sheet).svg">File:Flag of Tuvalu (construction sheet).svg#Star_table</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=433175">Link</a>
+                <br><br>
+                Morocco Flag:<br>
+                By <a href="//commons.wikimedia.org/wiki/User:Denelson83" title="User:Denelson83">Denelson83</a>, <a href="//commons.wikimedia.org/wiki/User:Zscout370" title="User:Zscout370">Zscout370</a> - <a rel="nofollow" class="external text" href="https://www.sgg.gov.ma/BO/bo_ar/1915/BO_135_ar.PDF">Moroccan royal decree (17 November 1915), BO-135_ar page 6</a> (Arabic) - <a rel="nofollow" class="external text" href="https://www.sgg.gov.ma/BO/bo_fr/1915/BO_162_fr.PDF">BO-162_fr page 6</a> (French)<span typeof="mw:File"><a href="//commons.wikimedia.org/wiki/File:Cherifian_Dahir_describing_the_Moroccan_flag_(1915)_Arabic-language_text.jpg" class="mw-file-description" title="Arabic-language text"></a></span>Arabic-language text<span typeof="mw:File"><a href="//commons.wikimedia.org/wiki/File:Cherifian_Dahir_describing_the_Moroccan_flag_(1915)_French-language_text.jpg" class="mw-file-description" title="French-language text"></a></span>French-language textEnglish Translation: <a href="https://en.wikipedia.org/wiki/Moroccan_Dahir" class="extiw" title="w:Moroccan Dahir">Cherifian Dahir</a> concerning the distinction of the Moroccan flag — Let it be known from this Our noble decree, may God exalt its value and make happiness and prosperity revolve around its center, that, in view of the advancement of the affairs of Our Cherifian Kingdom, the spread of its glory and renown, and the circumstances requiring that it be distinguished by a flag setting it apart from other kingdoms; and whereas the flag of Our revered ancestors resembled certain other flags, particularly those used for maritime signals; Our noble consideration has decreed that Our blessed flag be distinguished by placing the five-pointed Seal of Solomon at its center, in green, beseeching Almighty God to keep it ever flying with the winds of fortune and prosperity, in the present and in the future. Amen and peace.<a rel="nofollow" class="external text" href="https://www.sgg.gov.ma/BO/bo_ar/2005/BO_5378_ar.pdf">Moroccan royal decree (23 November 2005), BO-5378-ar page 5</a> (Arabic) - <a rel="nofollow" class="external text" href="https://www.sgg.gov.ma/BO/bo_fr/2005/bo_5378_fr.pdf">BO-5378-fr page 6</a> (French)English Translation: <a href="https://en.wikipedia.org/wiki/Moroccan_Dahir" class="extiw" title="w:Moroccan Dahir">Cherifian Dahir</a> with reference 1.05.99 issued on 20 Shawwal 1426 (23 November 2005) concerning the characteristics of the Kingdom’s flag and national anthem — In accordance with Article Seven of the Constitution, the flag of the Kingdom shall be a red banner bearing a green five-pointed star at its center. The flag shall be made of vivid red fabric, opaque and rectangular in shape. The star shall be open, palm green in color, composed of five continuous points, and woven into the same fabric so as to be visible on both sides of the flag. One of its points shall be directed upward. The hoist (vertical dimension) of the flag shall be equal to two thirds (2/3) of its fly (horizontal length). The star shall be inscribed within an invisible circle whose radius is equal to one sixth (1/6) of the flag’s fly (horizontal length), the center of which coincides with the intersection of the invisible diagonal lines of the flag’s rectangle. The width of each branch of the star shall be equal to one twentieth (1/20) of its length.See also:<a rel="nofollow" class="external text" href="https://www.crwflags.com/fotw/flags/ma.html#des">Flags of the World - Morocco, description</a><a rel="nofollow" class="external text" href="http://www.vexilla-mundi.com/morocco_flag.html">Vexilla Mundi - Morocco</a>Colors from <a rel="nofollow" class="external text" href="http://www.maroc.ma/en/content/flag-kingdom-morocco">Maroc.ma - Moroccan Flag</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=10278102">Link</a>
+                <br><br>
+                Colombia Flag:<br>
+                By See File history below for details. - Drawn by <a href="//commons.wikimedia.org/wiki/User:SKopp" title="User:SKopp">User:SKopp</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=343020">Link</a>
+                <br><br>
+                Solomon Islands Flag:<br>
+                By <a href="//commons.wikimedia.org/wiki/User:SKopp" title="User:SKopp">User:SKopp</a> - Drawn by <a href="//commons.wikimedia.org/wiki/User:SKopp" title="User:SKopp">User:SKopp</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=343758">Link</a>
+                <br><br>
+                Niger Flag:<br>
+                By Made by: Philippe Verdy <a href="//commons.wikimedia.org/wiki/User:Verdy_p" title="User:Verdy p">User:verdy_p</a>, see also <a href="https://fr.wikipedia.org/wiki/Utilisateur:verdy_p" class="extiw" title="fr:Utilisateur:verdy p">fr:Utilisateur:verdy_p</a>. - The flag of Niger often has the unusual 7:6 proportions. The three bands have exactly the same size. For exact and complete coverage of the image, it is used as background. The central filled circle is at least 50% of the median band in diameter. 85% is used for better rendering at small sizes. For reference colors, see Flags of the world that define Pantone colors. For Pantone color conversion, please use ONLY the sRGB color profile (at reference gamma = 2.2 on CRT screen, without gamma correction by software or by the graphics display driver, as defined in IEC 61966-2.1, and with slope limit of 1/32, this limit affecting only the indices 1 to 14 in the 8-bit colorimetric component space 0 to 255):The "burnt orange" color in the top band and circle is Pantone(166), i.e. RGB(224,82,6) = #E05206 on sRGB CRT screen, or CMYK(0,65%,100%,0) for process coated print, BUT NOT light orange #FF7000 which is somewhere between Pantone(130C) and Pantone(151), and is even lighter than X11 orange! See <a rel="nofollow" class="external free" href="https://web.archive.org/web/20060207090052/http://www.seoconsultants.com/css/colors/conversion/100/">https://web.archive.org/web/20060207090052/http://www.seoconsultants.com/css/colors/conversion/100/</a>The central white band is plain D65 reference white = RGB(255,255,255) = #FFFFFF.The green color in the bottom band is Pantone(361), i.e. RGB(13,176,43) = #0DB02B on sRGB CRT screen, or CMYK(76%,0,91%,0) for process coated print, BUT NOT grass green #36A100 which too burnt and more like Pantone(369)! See <a rel="nofollow" class="external free" href="https://web.archive.org/web/20060207090040/https://www.seoconsultants.com/css/colors/conversion/300/">https://web.archive.org/web/20060207090040/https://www.seoconsultants.com/css/colors/conversion/300/</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=433105">Link</a>
+                <br><br>
+                Kyrgyzstan Flag:<br>
+                By Shakiev N.T., Primov U.B. - <a rel="nofollow" class="external free" data-mw-original-href="http://kenesh.kg/ru/draftlaw/644212/show" href="https://kenesh.kg/ru/draftlaw/644212/show">http://kenesh.kg/ru/draftlaw/644212/show</a>; updated with <a rel="nofollow" class="external text" href="https://24.kg/obschestvo/283613_sporyi_vokrug_novogo_flaga_priblijennyiy_glavyi_gknb_pokazal_pravilnyiy_variant/">approved specifications</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=142706251">Link</a>
+                <br><br>
+            </p>
+        </details>
+    </div><br>
+    <hr>
+    <div id = "hintArea">
+        <h2>Hints (Click to open, hover to see):</h2>
+        <p>
+            Note: The hover may not work when using some extensions.
+            Please be aware that you may see the entire section when clicking it
+        </p>
+        <details>
+            <summary>Difficulty</summary>
+            <p class = "hint">4/10</p><br>
+        </details>
+        <br>
+        <details>
+            <summary>Starting Idea</summary>
+            <p class = "hint">The boss's letter is important to figure out the puzzle</p><br>
+        </details>
+        <br>
+        <details>
+            <summary>Starting Action</summary>
+            <p class = "hint">Try doing a similar thing the boss did to all flags</p><br>
+        </details>
+        <br>
+        <details>
+            <summary>Process Hints</summary>
+            <p class = "hint">Why did the boss give an "A" to the Canada flag?</p><br>
+            <p class = "hint">This extract uses indexing, i.e. taking the nth letter from something</p><br>
+        </details>
+        <br>
+        <details>
+            <summary>Solution</summary>
+            <p class = "hint">The colors on each flag respectively are 4,4,3,3,3,5,2,3,4,3,2</p><br>
+            <p class = "hint">We take the Xth letter of the country's name, where X is the number of colors on the flag</p><br>
+            <p class = "hint">The countries are sloVenia, uzbEkistan, luXembourg, chIle, maLdives, tuvaLu, mOrocco, coLombia, solOmon islands, niGer, kYrgyzstan</p><br>
+            <p class = "hint">Collecting all the letters, it spells VEXILLOLOGY</p><br>
+        </details>
+        <br>
+        <details>
+            <summary>Answer</summary>
+            <p class = "hint">VEXILLOLOGY</p><br>
+        </details>
+    </div>
+    <div id = "footerArea">
+        <p>
+            I hope you enjoyed the puzzle! I am still working on 
+            difficulty scaling and hinting for these puzzles, so
+            hopefully it will get better over time.
+        </p>
+    </div>
+</body>
